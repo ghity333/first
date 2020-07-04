@@ -21,4 +21,15 @@
         <property name="age" value="12"></property>
         <property name="name" value="jack"></property>
     </bean>
+    <bean id="user1" class="test.User1">
+        <property name="list">
+            <list>
+                <value>jack</value>
+                <value>jack1</value>
+                <value>jack2</value>
+                <value>jack3</value>
+                <value>jack4</value>
+            </list>
+        </property>
+    </bean>
 </beans>
