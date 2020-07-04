@@ -4,4 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="student" class="com.baisu.spring.Student"></bean>
     <bean id="people" class="com.baisu.spring.Man"></bean>
+   <bean id="room" class="com.baisu.spring.Room">
+       <property name="name" value="jack"></property>
+   </bean>
+    <bean id="userDao" class="test.UserDaoImpl"></bean>
+   <bean id="cart" class="test.Cart">
+       <property name="userDao" ref="userDao"></property>
+   </bean>
 </beans>
