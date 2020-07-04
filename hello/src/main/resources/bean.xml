@@ -11,4 +11,14 @@
    <bean id="cart" class="test.Cart">
        <property name="userDao" ref="userDao"></property>
    </bean>
+    <bean id="userDao1" class="construct.UserDaoImpl">
+    </bean>
+    <bean id="cart1" class="construct.Cart">
+        <constructor-arg name="userDao" ref="userDao1"></constructor-arg>
+    </bean>
+    <bean id="user" class="life.User" init-method="init" destroy-method="destroy" scope="prototype"></bean>
+    <bean id="people1" class="set.People">
+        <property name="age" value="12"></property>
+        <property name="name" value="jack"></property>
+    </bean>
 </beans>
