@@ -13,5 +13,6 @@ public class First {
         Scanner sc=new Scanner(System.in);
         int i = sc.nextInt();
         System.out.println(i);
+        System.out.println("helllo");
     }
 }
